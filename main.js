@@ -4,14 +4,8 @@ import fs from 'fs'
 import funcs from './functions.cjs'
 import passwordupdator from './password-updater.cjs'
 const apikeys = funcs.getapikeys()
-
-
-var passwordarray = funcs.passarray()
-
-
-passwordupdator.update(all)
-
-// PUT /api/access/users/(string:username)/password
+import axios, {isCancel, AxiosError} from 'axios';
+// PUT /api/access/users/(string:username)/password
 
 /*
 await funcs.makenum(7)

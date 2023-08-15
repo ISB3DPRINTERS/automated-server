@@ -1,5 +1,7 @@
 var fs = require('fs')
 import passtools from './password-updator.cjs'
+import axios, {isCancel, AxiosError} from 'axios';
+
 function makenumber(length) {
     let result = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -23,8 +25,8 @@ function findapikeys(whichone)
     // var apikeys = fs.readFileSync(apikeys, 'utf8');
     return '1234'
 }
-function passwordarray() {
-    var currentpassword = getcurrentpassword()
+function passwordarray(grade,printer) {
+    var currentpassword = getcurrentpassword(grade,printer)
     var newpassword = makenumber(7)
     var datatoupdate = {
         "password": newpassword,
