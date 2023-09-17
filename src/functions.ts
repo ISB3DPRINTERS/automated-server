@@ -1,8 +1,8 @@
 var fs = require("fs");
-import passtools from "./password-updater.mjs";
+import passtools from "./password-updater";
 import axios, { isCancel, AxiosError } from "axios";
 
-export const makenum = length => {
+export const makenum = (length:number) => {
   let result = "";
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -14,7 +14,7 @@ export const makenum = length => {
   }
   return result;
 };
-export const getcurrentpassword = (grade, printer) => {
+export const getcurrentpassword = (grad:number, printer:number) => {
   var pathtopass = "pass.txt";
   // var currentpass = fs.readFileSync(pathtopass, 'utf8');
   var currentpass = "abc"; //TESTING PURPOSES ONLY
@@ -22,14 +22,14 @@ export const getcurrentpassword = (grade, printer) => {
 };
 
 
-export const findapikeys = (grade, printer) => {
+export const findapikeys = (grade:number, printer:number) => {
   var pathtoapikeys = "keys.txt";
   // var apikeys = fs.readFileSync(apikeys, 'utf8');
   return "1234";
 };
 
 
-export const passwordarray = (grade, printer,which) => {
+export const passwordarray = (grade:number, printer:number,which:string) => {
   var currentpassword = getcurrentpassword(grade, printer);
   var newpassword = makenum(7);
   var datatoupdate = {
@@ -42,13 +42,13 @@ export const passwordarray = (grade, printer,which) => {
 };
 
 
-export const apipathfinder = grade => {
+export const apipathfinder = (grade:number) => {
   var path = "/api/access/users/" + "grade" + grade + "/password";
   return path;
 };
 
 
-export default async function(grade)  {
+export default async function(grade: string | number)  {
   if ((grade = "all")) {
     await passtools(6);
     await passtools(7);

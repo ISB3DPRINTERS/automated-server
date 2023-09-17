@@ -1,7 +1,7 @@
 import fs from "fs";
-import functions from "./functions.mjs";
+import functions from "./functions.js";
 import axios, { isCancel, AxiosError } from "axios";
-var cron = require('node-cron');
+import * as cron from 'node-cron'
 
 console.log(functions('all'))
 
