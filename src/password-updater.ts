@@ -1,6 +1,6 @@
 import { findapikeys, apipathfinder, passwordarray } from "./functions";
 import axios, { isCancel, AxiosError } from "axios";
-import axiosfunc from "./axiosfunc.mjs";
+import axiosfunc from "./axiosfunc";
 
 export default async function therealchanger(grade:number): Promise<string> {
   async function evenrealerchanger(grade:number, printer:number) {
