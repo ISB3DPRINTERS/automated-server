@@ -2,7 +2,7 @@ import { findapikeys, apipathfinder, passwordarray } from "./functions";
 import axios, { isCancel, AxiosError } from "axios";
 import axiosfunc from "./axiosfunc";
 
-export default async function therealchanger(grade:number): Promise<string> {
+export default async function therealchanger(grade:number): Promise<void> {
   async function evenrealerchanger(grade:number, printer:number) {
     
     
@@ -17,5 +17,4 @@ export default async function therealchanger(grade:number): Promise<string> {
   await evenrealerchanger(grade, 3);
   await evenrealerchanger(grade, 4);
   // will call for each printer
-  return "password-updater.js finished"
 }
