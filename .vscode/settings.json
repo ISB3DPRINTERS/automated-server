@@ -3,12 +3,19 @@
         "apikeys",
         "apipathfinder",
         "axiosfunc",
+        "currentpass",
         "currentpassword",
+        "datatoupdate",
         "evenrealerchanger",
         "findapikeys",
+        "getcurrentpassword",
         "makenum",
+        "middleschool",
         "newpassword",
         "passtools",
-        "passwordarray"
+        "passwordarray",
+        "pathtoapikeys",
+        "pathtopass",
+        "therealchanger"
     ]
 }
