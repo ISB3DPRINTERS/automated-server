@@ -49,7 +49,7 @@ export const apipathfinder = (grade:number) => {
 
 
 export default async function(grade: string | number)  {
-  if ((grade = "all")) {
+  if ((grade == "all")) {
     await passtools(6);
     await passtools(7);
     await passtools(8);
@@ -57,25 +57,25 @@ export default async function(grade: string | number)  {
     await passtools(10);
     await passtools(11);
     await passtools(12);
-  } else if ((grade = "6")) {
+  } else if ((grade == "6")) {
     await passtools(6);
-  } else if ((grade = "7")) {
+  } else if ((grade == "7")) {
     await passtools(7);
-  } else if ((grade = "8")) {
+  } else if ((grade == "8")) {
     await passtools(8);
-  } else if ((grade = "9")) {
+  } else if ((grade == "9")) {
     await passtools(9);
-  } else if ((grade = "10")) {
+  } else if ((grade == "10")) {
     await passtools(10);
-  } else if ((grade = "11")) {
+  } else if ((grade == "11")) {
     passtools(11);
-  } else if ((grade = "12")) {
+  } else if ((grade == "12")) {
     await passtools(8);
-  } else if ((grade = "highschool")) {
+  } else if ((grade == "highschool")) {
     await passtools(6);
     await passtools(7);
     await passtools(8);
-  } else if ((grade = "middleschool")) {
+  } else if ((grade == "middleschool")) {
     await passtools(9);
     await passtools(10);
     await passtools(11);
