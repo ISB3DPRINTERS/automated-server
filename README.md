@@ -1,7 +1,5 @@
 # automated-server
 
-To the random kid who will be working on this someday years future:
-
-The code may not be formatted to perfection, but you should be able to find your way around it :)
-
-And yes, indeed it is heavily redundant and uses barely working ESM
+## IMPORTANT NOTES:
+### This project will be migrating into [teachers-console](https://github.com/ISB3DPRINTERS/teachers-console)
+### Main developement in preperation to that move takes place in the rust branch: For contribution check issue [#4](https://github.com/ISB3DPRINTERS/automated-server/issues/4)
