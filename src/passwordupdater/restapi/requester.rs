@@ -8,7 +8,7 @@ fn send_put_request(url: &str, body: &str, headers: &str) -> Result<Response, re
     headers.insert(CONTENT_TYPE, HeaderValue::from_static("application/json"));
     let response = client.put(url)
         .headers(headers)
-        .body(body.to_owned())
+        .body(body.to_owned(),grade)
         .send()?;
     Ok(response)
 }

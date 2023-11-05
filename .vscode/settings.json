@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
         "passupdater",
-        "passwordupdater"
+        "passwordupdater",
+        "reqwest",
+        "restapi",
+        "serde"
     ]
 }
