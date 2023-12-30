@@ -1,5 +1,5 @@
 # automated-server
 
 ## IMPORTANT NOTES:
-### This project will be migrating into [teachers-console](https://github.com/ISB3DPRINTERS/teachers-console)
-### Main developement in preperation to that move takes place in the rust branch: For contribution check issue [#4](https://github.com/ISB3DPRINTERS/automated-server/issues/4)
+## THIS PROJECT HAS BEEN INTEGRATED INTO THE TEACHERS-CONSOLE THEN FURTHER INTO FULL-SERVER
+THIS PROJECT IS HERE FOR HISTORICAL NOTICE. THIS PROJECT WILL BE ARCHIVED SOON
